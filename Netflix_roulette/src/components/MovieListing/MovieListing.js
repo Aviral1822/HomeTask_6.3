@@ -9,6 +9,8 @@ import ErrorHandling from "../ErrorHandling";
 const MovieListing = () => {
   const movies = useSelector(getAllMovies);
   const shows = useSelector(getAllShows);
+  let countmovies = movies.Response === "True" ? movies.Search.length : 0;
+  let countshows = shows.Response === "True" ? shows.Search.length : 0;
   let renderMovies,renderShows = "";
  
       renderMovies =movies.Response === "True" ? 
@@ -40,10 +42,16 @@ const MovieListing = () => {
   return (
     <div className="movie-wrapper">
       <div className="movie-list">
+      <div className="moviecount">
+          <p>{countmovies}<span className="count"> movies fetched</span></p>
+        </div>
         <h2 className="mov-cont">Movies</h2>
         <div className="movie-container">{renderMovies}</div>
       </div>
       <div className="show-list">
+      <div className="moviecount">
+          <p>{countshows}<span className="count"> shows fetched</span></p>
+        </div>
         <h2 className="show-cont">Shows</h2>
         <div className="movie-container">{renderShows}</div>
       </div>
