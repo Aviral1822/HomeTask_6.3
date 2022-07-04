@@ -1,0 +1,18 @@
+@import "../../common/colors.scss";
+.footer{
+  background: rgb(175, 11, 11);
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font-primary;
+  flex-direction: column;
+  letter-spacing: 2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 2px 2px black;
+  font-size: 18px;
+  
+
+  
+}
+

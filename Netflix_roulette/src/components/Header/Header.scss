@@ -1,0 +1,107 @@
+@import "../../common/colors.scss";
+
+
+.header {
+  background-image:url("https://bramptonist.com/wp-content/uploads/2018/06/netflix-image.jpg");
+  height: 300px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-position: center right right;
+  background-size: cover;
+  
+}
+
+.logo {
+  color: $font-primary;
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+  position: absolute;
+  top: 2.1rem;
+  left: 2rem;
+}
+.logo .logo-inner{
+  color: rgb(141, 17, 17);
+  color: 26px;
+}
+.user-image,.user-image img {
+  width: 38px;
+  height: 38px;
+}
+
+.search-cont h1{
+  position: relative;
+  margin-left: -5.3rem;
+  color: rgba(255, 249, 249, 0.863);
+  text-shadow: 1px 1px black;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.90;
+}
+.search-filter{
+  position: absolute;
+  top: 5.6rem;
+  position: relative;
+  .butt1 {
+    background-color: #e62f47; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:15px;
+  }
+ 
+  h3{
+    position: absolute;
+    top: 0.3rem;
+    left: -5.2rem;
+    font-size: 15.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(255, 249, 249, 0.863);
+  }
+}
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 20rem;
+  margin-top:1rem ;
+  form {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    color: white;
+    button {
+      background-color: #e62f47; /* Green */
+      border: none;
+      color: white;
+      padding: 5px 28px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      height: 36px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left:5px;
+    }
+  }
+
+  input {
+    font-size: 13px;
+    width: 100%;
+    padding: 3px 3px 3px 7px;
+    height: 38px;
+    outline: none;
+    background-color: rgb(26, 25, 25);
+    color: whitesmoke;
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../common/colors.scss";
+
+.movie-list,
+.show-list {
+  
+  margin: 20px 0px;
+  h2 {
+    color: red;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+  grid-gap: 15px;
+}
+
+.show-cont{
+  border: 1px solid black;
+  margin-top:1rem;
+  font-size: 25px;
+  display: flex;
+  color: rgb(112, 12, 12);
+  margin-bottom: 2rem;
+  justify-content: baseline;
+}
+
+.show-cont h2{
+  color: red;
+}

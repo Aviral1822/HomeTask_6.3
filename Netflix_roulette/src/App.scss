@@ -1,0 +1,25 @@
+@import "../src/common/colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+ color:black; 
+}
+
+body {
+  //background: rgb(0, 0, 0);
+ background-image: url("https://c.wallhere.com/photos/2e/53/video_games_Darksiders_mask_black-149687.jpg!d");
+  background-position: center;
+background-size: contain;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0px 40px;
+}
